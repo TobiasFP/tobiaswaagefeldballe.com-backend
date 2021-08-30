@@ -1,0 +1,25 @@
+production: false
+
+mongodb:
+  host: localhost
+  port: 27017
+  dbname: lttr
+  username: tobias
+  password: What4reUL00k1ng4
+
+mysql:
+  DB_CONNECTION: MYSQL
+  DB_HOST: mysql
+  DB_PORT: 23311
+  DB_DATABASE: keycloak
+  DB_USERNAME: keycloak
+  DB_PASSWORD: What4reUL00k1ng4
+  DB_ROOT_PASSWORD: What4reUL00k1ng4
+
+keycloak:
+  user: tobias
+  password: What4reUL00k1ng4
+
+appUrl: http://localhost:8100
+apiUrl: http://localhost:8000
+keycloakUrl: https://auths.tobiaswaagefeldballe.dk
