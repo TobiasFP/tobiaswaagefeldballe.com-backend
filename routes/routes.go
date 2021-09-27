@@ -41,6 +41,9 @@ func StartGin() {
 			if origin == "https://tobiaswaagefeldballe.dk" {
 				return true
 			}
+			if origin == "https://osandweb.dk" {
+				return true
+			}
 			return origin == config.GetString("appUrl")
 		},
 		MaxAge: 12 * time.Hour,
@@ -52,6 +55,7 @@ func StartGin() {
 
 	api := router.Group("/api")
 
+	api.Static("/assets", "./assets")
 	api.POST("/runfortran", exec.RunFortranSpeedtest)
 	api.POST("/rungolang", exec.RunGolangSpeedtest)
 
