@@ -16,7 +16,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: lttr_phpmyadmin
+    container_name: phpmyadmin
     links:
       - mariadb
     environment:
@@ -55,7 +55,7 @@ services:
       restart: unless-stopped
       environment:
         MONGO_INITDB_ROOT_USERNAME: 'lttr'
-        MONGO_INITDB_ROOT_PASSWORD: 'Ellabdlef09'
+        MONGO_INITDB_ROOT_PASSWORD: 'wh4t4reUlooking4'
         MONGO_INITDB_DATABASE: 'lttr'
       volumes:
         - ./data/mongo_data:/data/db
