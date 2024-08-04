@@ -19,9 +19,6 @@
 data
 main
 
-config/production.yaml
-lttr-backend
 
-config/serendipity-keycloak-theme/node_modules
 
 push_to_prod.sh

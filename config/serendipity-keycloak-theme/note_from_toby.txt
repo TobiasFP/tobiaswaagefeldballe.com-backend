@@ -1,7 +1,0 @@
-Make sure to install from NPM, version:
-
-1.34.1 compiled with dart2js 2.13.1
-
-sudo npm install -g sass
-
-sass --watch --load-path=./config/serendipity-keycloak-theme/node_modules  theme/login/resources/css/login.scss:theme/login/resources/css/login.css

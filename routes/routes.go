@@ -3,7 +3,6 @@ package routes
 import (
 	"time"
 
-	"backend/config"
 	"backend/controllers/exec"
 
 	"github.com/gin-contrib/cors"
@@ -14,7 +13,6 @@ import (
 
 // StartGin function
 func StartGin() {
-	config := config.GetConfig()
 
 	router := gin.Default()
 	router.Use(cors.New(cors.Config{
@@ -30,7 +28,7 @@ func StartGin() {
 			if origin == "https://osandweb.dk" {
 				return true
 			}
-			return origin == config.GetString("appUrl")
+			return false
 		},
 		MaxAge: 12 * time.Hour,
 	}))
