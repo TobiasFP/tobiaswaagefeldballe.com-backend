@@ -25,6 +25,9 @@ func StartGin() {
 			if origin == "https://tobiaswaagefeldballe.dk" {
 				return true
 			}
+			if origin == "https://app.tobiaswaagefeldballe.dk" {
+				return true
+			}
 			if origin == "https://osandweb.dk" {
 				return true
 			}
